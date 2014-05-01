@@ -1,0 +1,18 @@
+
+<html>
+  <head>
+    <title>Blog Track</title>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+
+<script>
+  var socket = io.connect();
+  socket.on('news', function (data) {
+    console.log(data);
+    socket.emit('my other event', { my: 'data' });
+  });
+</script>
+    <p>Awesome <i>Node JS</i> server is up!</p>
+    </body>
+</html>

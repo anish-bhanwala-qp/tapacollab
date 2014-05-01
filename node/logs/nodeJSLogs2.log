@@ -1,0 +1,14 @@
+{"level":"info","message":"Server has started.","timestamp":"2014-05-01T12:56:21.537Z"}
+{"level":"info","message":"About to route a request for /","timestamp":"2014-05-01T12:56:23.644Z"}
+{"level":"info","message":"Server has started.","timestamp":"2014-05-01T12:57:51.729Z"}
+{"level":"info","message":"About to route a request for /","timestamp":"2014-05-01T12:57:53.547Z"}
+{"level":"info","message":"Server has started.","timestamp":"2014-05-01T12:59:08.739Z"}
+{"level":"info","message":"About to route a request for /","timestamp":"2014-05-01T12:59:11.065Z"}
+{"level":"info","message":"Server has started.","timestamp":"2014-05-01T12:59:51.147Z"}
+{"level":"info","message":"About to route a request for /","timestamp":"2014-05-01T12:59:53.204Z"}
+{"level":"info","message":"function found/","timestamp":"2014-05-01T12:59:53.205Z"}
+{"level":"info","message":"Server has started.","timestamp":"2014-05-01T13:00:52.392Z"}
+{"level":"info","message":"About to route a request for /","timestamp":"2014-05-01T13:00:54.574Z"}
+{"level":"info","message":"function found/","timestamp":"2014-05-01T13:00:54.574Z"}
+{"level":"info","message":"inside staticContent","timestamp":"2014-05-01T13:00:54.574Z"}
+{"level":"info","message":"logging filename: /","timestamp":"2014-05-01T13:00:54.575Z"}

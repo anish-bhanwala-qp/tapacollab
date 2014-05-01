@@ -1,0 +1,15 @@
+{"level":"info","message":"Server has started.","timestamp":"2014-05-01T13:10:04.511Z"}
+{"level":"info","message":"About to route a request for /","timestamp":"2014-05-01T13:10:07.199Z"}
+{"level":"info","message":"function found/","timestamp":"2014-05-01T13:10:07.199Z"}
+{"level":"info","message":"logging filename: /","timestamp":"2014-05-01T13:10:07.200Z"}
+{"level":"info","message":"logging filename: /","timestamp":"2014-05-01T13:10:07.200Z"}
+{"level":"info","message":"Server has started.","timestamp":"2014-05-01T13:13:45.577Z"}
+{"level":"info","message":"About to route a request for /","timestamp":"2014-05-01T13:13:50.608Z"}
+{"level":"info","message":"function found/","timestamp":"2014-05-01T13:13:50.608Z"}
+{"level":"info","message":"logging filename: /","timestamp":"2014-05-01T13:13:50.608Z"}
+{"level":"info","message":"logging filename: /html/index.html","timestamp":"2014-05-01T13:13:50.608Z"}
+{"level":"info","message":"Server has started.","timestamp":"2014-05-01T13:14:48.630Z"}
+{"level":"info","message":"About to route a request for /","timestamp":"2014-05-01T13:14:52.825Z"}
+{"level":"info","message":"function found/","timestamp":"2014-05-01T13:14:52.826Z"}
+{"level":"info","message":"logging filename: /","timestamp":"2014-05-01T13:14:52.826Z"}
+{"level":"info","message":"logging filename: ./html/index.html","timestamp":"2014-05-01T13:14:52.826Z"}
