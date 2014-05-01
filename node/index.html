@@ -3,6 +3,7 @@
   <head>
     <title>Blog Track</title>
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </head>
   <body>
 
@@ -12,7 +13,35 @@
     console.log(data);
     socket.emit('my other event', { my: 'data' });
   });
+  socket.on('broadcastMessage', function (data) {
+    console.log(data);
+    socket.emit('broadcast event', { my: 'data' });
+  });
+
+  $( "#myForm" ).submit(function( event ) {
+    event.preventDefault();
+    var $form = $( this ),
+    serializedData = $form.serialize();
+    url1 = $form.attr( "action" );
+    // fire off the request to /form.php
+    request = $.ajax({
+        url: url1,
+        type: "post",
+        data: serializedData
+    });
+
+    // callback handler that will be called on success
+    request.done(function (response, textStatus, jqXHR){
+        // log a message to the console
+        console.log("Hooray, it worked!");
+    }); 
+ });
 </script>
     <p>Awesome <i>Node JS</i> server is up!</p>
+
+    <form id="myForm" action="/broadcastMessage" method="post">
+      <textarea name="text" rows="3" cols="60"></textarea>
+      <input type="submit" value="send"/>
+    </form>
     </body>
 </html>

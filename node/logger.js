@@ -1,7 +1,7 @@
 var logger = require('winston');
 
-//Use log files
-logger.add(logger.transports.File, { filename: './logs/nodeJSLogs.log', maxsize: 1024 });
+//Use log files, 524288000 = 500 MB
+logger.add(logger.transports.File, { filename: './logs/nodeJSLogs.log', maxsize: 524288000 });
 //remove deault console logging
 //winston.remove(winston.transports.Console);
 

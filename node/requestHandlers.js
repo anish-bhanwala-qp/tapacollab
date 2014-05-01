@@ -2,6 +2,7 @@ var querystring = require("querystring");
 var logger = require("./logger").logger;
 var fs = require("fs");
 var url = require("url");
+var socketHandlers = require("./socketHandlers");
 
 function start(request, response, postData) {
     logger.log("Request handler 'start' was called.");
@@ -15,6 +16,18 @@ function upload(request, response, postData) {
     response.writeHead(200, {"Content-Type": "text/plain"});
     response.write("You've sent the text: " +
 		   querystring.parse(postData).text);
+    response.end();
+}
+
+function broadcastMessage(request, response, postData) {
+    logger.log("info", "inside requesthandler broadcastMessge. Method: " + request.method);
+    logger.log("info", "post data received:" + postData);
+    if (postData && querystring.parse(postData).text) {
+	var message = JSON.parse(querystring.parse(postData).text);
+	socketHandlers.broadcastMessage(message);
+    }
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.write("message broadcast successfull");
     response.end();
 }
 
@@ -210,3 +223,4 @@ var TYPES = { ".3gp"   : "video/3gpp"
 exports.start = start;
 exports.upload = upload;
 exports.staticContent = staticContent;
+exports.broadcastMessage = broadcastMessage;

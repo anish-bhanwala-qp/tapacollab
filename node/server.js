@@ -22,17 +22,17 @@ function start(handlers) {
 	logger.log("Request for " + pathname + " received.");
 	request.setEncoding("utf8");
 
-	request.addListener("data", function(postDataChunk) {
+	request.on("data", function(postDataChunk) {
 		postData += postDataChunk;
 		logger.log("Received POST data chunk.");
 	    });
-	request.addListener("end", function() {
+	request.on("end", function() {
 		route(handlers, pathname, request, response, postData);
 	    });
     }
     var server = http.createServer(onRequest);
     server.listen(8888);
-    var io = require('./socketHandlers').listen(server);
+    require('./socketHandlers').listen(server);
     logger.log("info", "Server has started.");
 }
 
