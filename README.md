@@ -1,4 +1,4 @@
-blogTrack
+Tapacollab
 =========
 
-Blog comments, chatting, tracking 
+Collaborate, interact, chat on anything 
