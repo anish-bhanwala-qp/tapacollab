@@ -1,0 +1,26 @@
+<project name="MyProject" default="compile" basedir=".">
+    <description>
+        simple example build file
+    </description>
+    <!-- set global properties for this build -->
+    <property name="root" location="../java"/>
+    <property name="src" location="${root}/src"/>
+    <property name="lib" location="${root}/lib"/>
+    <property name="classes" location="${root}/WEB-INF/classes"/>
+
+    <target name="compile" description="compile the source">
+        <mkdir dir="${classes}" />
+        <javac srcdir="${src}" destdir="${classes}">
+            <classpath>
+                <fileset dir="${lib}">
+                    <include name="**/*.jar" />
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="clean.classes" description="clean up" >
+        <!-- Delete the ${build} and ${dist} directory trees -->
+        <!--<delete dir="${classes}"/>-->
+    </target>
+</project>

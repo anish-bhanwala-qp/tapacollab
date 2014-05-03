@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "/WEB-INF/classes/struts-2.3.dtd">
+
+<struts>
+    <!--
+    You could also set the constants in the struts.properties file
+    placed in the same directory as struts.xml
+    -->
+    <constant name="struts.devMode" value="true" />
+
+    <package name="tapacollab" extends="struts-default" namespace="/">
+
+        <!--
+        If no class attribute is specified the framework will assume success and
+        render the result index.jsp
+        If no name value for the result node is specified the success value is the default
+        -->
+        <action name="index">
+            <result>/jsp/index.jsp</result>
+        </action>
+
+        <action name="">
+            <result>/jsp/index.jsp</result>
+        </action>
+
+        <!--
+        If the URL is hello.action then call the execute method of class HelloWorldAction.
+        If the result returned by the execute method is success render the HelloWorld.jsp
+        -->
+        <action name="hello" class="com.tapacollab.anish.HelloWorldAction" method="execute">
+            <result name="success">/jsp/HelloWorld.jsp</result>
+            <result name="input">/jsp/index.jsp</result>
+        </action>
+
+    </package>
+
+</struts>

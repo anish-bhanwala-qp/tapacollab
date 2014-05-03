@@ -1,2 +1,2 @@
-cd ~/blogTrack/node;
+cd ~/tapacollab/node;
 node main.js
