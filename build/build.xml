@@ -5,7 +5,7 @@
     <!-- set global properties for this build -->
     <property name="root" location="../java"/>
     <property name="src" location="${root}/src"/>
-    <property name="lib" location="${root}/lib"/>
+    <property name="lib" location="${root}/WEB-INF/lib"/>
     <property name="classes" location="${root}/WEB-INF/classes"/>
 
     <target name="compile" description="compile the source">

@@ -1,4 +1,4 @@
-package com.tapacollab.anish;
+package com.tapacollab;
 
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.Date;
